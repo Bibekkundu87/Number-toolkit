@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Toolkit – Roman & More</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Number Toolkit</h1>
+            <p>Roman Numerals, Primes, Factorials & More</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <div class="card-header">
+                <h3>Number → Roman</h3>
+                <p>Convert integer (1-3999) to Roman</p>
+            </div>
+            <div class="card-body">
+                <input type="number" id="num-roman-input" placeholder="e.g., 2025">
+                <button id="num-roman-btn">Convert to Roman</button>
+                <div id="num-roman-result" class="result-box">Result will appear here</div>
+                
+                <div class="history-section">
+                    <h4>Recent History</h4>
+                    <ul id="num-roman-history" class="history-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Roman → Number</h3>
+                <p>Convert Roman string to integer</p>
+            </div>
+            <div class="card-body">
+                <input type="text" id="roman-num-input" placeholder="e.g., MMXXIV">
+                <button id="roman-num-btn">Convert to Number</button>
+                <div id="roman-num-result" class="result-box">Result will appear here</div>
+
+                <div class="history-section">
+                    <h4>Recent History</h4>
+                    <ul id="roman-num-history" class="history-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Even / Odd Checker</h3>
+                <p>Check if a number is even or odd</p>
+            </div>
+            <div class="card-body">
+                <input type="number" id="even-odd-input" placeholder="Enter any number">
+                <button id="even-odd-btn">Check</button>
+                <div id="even-odd-result" class="result-box">Result will appear here</div>
+
+                <div class="history-section">
+                    <h4>Recent History</h4>
+                    <ul id="even-odd-history" class="history-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Prime Checker</h3>
+                <p>Verify if a number is prime</p>
+            </div>
+            <div class="card-body">
+                <input type="number" id="prime-input" placeholder="Positive integer">
+                <button id="prime-btn">Check Prime</button>
+                <div id="prime-result" class="result-box">Result will appear here</div>
+
+                <div class="history-section">
+                    <h4>Recent History</h4>
+                    <ul id="prime-history" class="history-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Factorial Calculator</h3>
+                <p>Calculate n! (0-20)</p>
+            </div>
+            <div class="card-body">
+                <input type="number" id="factorial-input" placeholder="0 to 20">
+                <button id="factorial-btn">Calculate Factorial</button>
+                <div id="factorial-result" class="result-box">Result will appear here</div>
+
+                <div class="history-section">
+                    <h4>Recent History</h4>
+                    <ul id="factorial-history" class="history-list"></ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Number Toolkit. Pure HTML/CSS/JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
